@@ -1,0 +1,9 @@
+version: "3.7"
+services: 
+  api:
+    container_name: "docker-fastapi-websocket"
+    build: .
+    ports: 
+      - 8080:8090
+    volumes: 
+      - ./app:/usr/src/app
